@@ -8,12 +8,13 @@ class CashRegister
   end 
 
   def add_item(title, price, quantity=1)
+    if title.uniq? == true
+      items << title 
+    end 
     total= self.total += (price * quantity)
     total
     self.the_last_transaction = price * quantity
-    if title.uniq?
-      items << title 
-    end 
+    
   end 
   
   def apply_discount 
