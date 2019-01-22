@@ -11,7 +11,9 @@ class CashRegister
     total= self.total += (price * quantity)
     total
     self.the_last_transaction = price * quantity
-    items << title
+    if title.uniq?
+      items << title 
+    end 
   end 
   
   def apply_discount 
