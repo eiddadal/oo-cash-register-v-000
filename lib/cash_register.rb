@@ -13,7 +13,7 @@ class CashRegister
     total
     self.the_last_transaction = price * quantity
     
-    if title.uniq? 
+    if uniq.title == title  
       
     end
     
