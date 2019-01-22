@@ -13,9 +13,7 @@ class CashRegister
     total
     self.the_last_transaction = price * quantity
     
-      times = 0
-    while times < quantity do
-      @items << title
+     tle
       times += 1
     end
     
