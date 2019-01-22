@@ -12,8 +12,8 @@ class CashRegister
     total= self.total += (price * quantity)
     total
     self.the_last_transaction = price * quantity
-    
-    if uniq.title == title  
+    items << title 
+    if uniq.items  
       
     end
     
