@@ -14,6 +14,7 @@ class CashRegister
     self.the_last_transaction = price * quantity
     items << title 
     items.map { |h| h['a'] }.uniq
+    items 
     
   end 
   
